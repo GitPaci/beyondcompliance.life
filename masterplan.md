@@ -1,385 +1,149 @@
-30-Second Elevator Pitch
+# Master Plan
 
-Beyond Compliance: The Data Integrity Mission Simulator
+## 30-Second Elevator Pitch
 
-A web-based, high-stakes GMP decision simulation where operators practice protecting patients and data integrity under real-world pressure.
+**Beyond Compliance: The Data Integrity Mission Simulator** is a web-based GMP decision simulation where teams practice protecting patients and data integrity under realistic pressure.
 
-Built to strengthen inspection readiness, decision confidence, and integrity culture — without lectures or slides.
+It is designed to improve:
 
-Problem & Mission
-The Problem
+- inspection readiness,
+- decision quality,
+- escalation confidence, and
+- integrity culture maturity.
 
-Data integrity failures rarely happen from ignorance.
+---
 
-They happen under:
+## Problem and Mission
 
-Time pressure
+### The problem
 
-Customer escalation
+Data integrity failures are usually not caused by ignorance. They are often caused by pressure:
 
-Production urgency
+- time constraints,
+- customer escalation,
+- production urgency,
+- interpersonal influence.
 
-Social influence
+Traditional training teaches ALCOA+ concepts, but rarely simulates stressful decision contexts.
 
-Traditional training:
+### The mission
 
-Explains ALCOA+
+Build a digital simulator that trains defensible GMP decision-making under pressure by reinforcing:
 
-Does not simulate pressure
+- evidence protection,
+- escalation discipline,
+- GDP-correct documentation behavior,
+- patient-first outcomes.
 
-Result:
-Teams know the rules — but haven’t practiced defending them.
+> Core belief: **Data integrity is patient protection.**
 
-The Mission
+---
 
-Build a digital simulation that:
+## Target Audience
 
-Trains decision-making under GMP pressure
-
-Reinforces ALCOA+ in action
-
-Builds “evidence protection instinct”
-
-Strengthens defensible batch decisions
-
-Core belief:
-
-Data integrity is not paperwork. It is patient protection.
-
-Target Audience
-Primary Buyer — QA Leaders
-
-They care about:
-
-Inspection risk
-
-Audit defensibility
-
-Culture maturity
-
-Repeat deviation reduction
+### Primary buyer: QA leaders
 
 They need:
 
-Proof of behavioral impact
+- reduced inspection risk,
+- stronger audit defensibility,
+- measurable behavior impact,
+- scalable training evidence.
 
-Measurable engagement
+### Primary users: operators and frontline contributors
 
-Scalable training
+They value:
 
-Primary Users — Operators
+- realism,
+- practical relevance,
+- professional trust,
+- clear responsibility.
 
-They want:
+Desired user outcome: *“I can defend this decision during inspection.”*
 
-Respect
+---
 
-Realism
+## MVP Scope (Teaser Version)
 
-Practical relevance
+### 1) Interactive mission scenario (10–12 minutes)
 
-Recognition of their responsibility
+Users review a release-critical batch case and make sequential decisions.
 
-They should leave feeling:
+### 2) Real-time pressure events
 
-“I’m trusted to protect the product.”
+Timed interruptions introduce realistic stress (email, IM, manager calls) requiring explicit user responses.
 
-Core Features (MVP Teaser Version)
+### 3) Evidence protection challenges
 
-This is not full deployment.
-This is an internal buy-in simulator.
+Users handle issues such as:
 
-1. Interactive Mission Scenario (10–12 min)
+- timeline mismatches,
+- unqualified sign-offs,
+- GDP correction choices,
+- missing raw data.
 
-User enters:
+### 4) Integrity scorecard
 
-“Batch TB-26-014 requires urgent release.”
+Final outcomes are framed as inspection readiness signals:
 
-They must:
+- patient risk exposure,
+- evidence defensibility,
+- GMP alignment,
+- decision narrative quality.
 
-Review digital records
+### 5) QA leader preview mode
 
-Identify integrity signals
+A decision-maker view showing:
 
-Decide next actions
+- competencies trained,
+- behavioral metrics captured,
+- scalability and rollout potential.
 
-2. Real-Time Pressure Layer
+---
 
-At timed intervals:
+## Technology Direction
 
-Customer escalation email appears
+- **Frontend:** React / Next.js
+- **Backend:** Lightweight Node or serverless functions
+- **Hosting:** Vercel or equivalent
+- **Analytics:** Session and behavior instrumentation
 
-Plant manager pop-up call
+Key tracked behaviors:
 
-Internal IM messages:
+- escalation timing,
+- GDP correction quality,
+- response under pressure,
+- risk-taking tendencies.
 
-Sales: “Patients impacted.”
+---
 
-Supply: “Truck leaves at 17:00.”
+## Build Philosophy
 
-User must respond while reviewing evidence.
+- Build one excellent 10-minute scenario first.
+- Prioritize clarity over feature volume.
+- Measure behavior from day one.
+- Make leadership value immediately visible.
 
-3. Evidence Protection Challenges
+**Target:** A funding-ready MVP in ~4–6 weeks.
 
-Interactive elements:
+---
 
-Timeline mismatch vs equipment log
+## Success Indicators
 
-Unqualified line clearance sign-off
+### Product outcomes
 
-GDP correction scenario
+- High mission completion rates
+- Strong user-perceived realism
+- Repeat participation
 
-Missing raw data attachment
+### Learning outcomes
 
-Users must choose:
+- Improved escalation behavior
+- Better evidence handling decisions
+- Reduced pressure-driven integrity errors
 
-Escalate
+### Business outcomes
 
-Correct per GDP
-
-Continue
-
-Ignore
-
-Every choice shifts “Integrity Meter.”
-
-4. Integrity Scorecard (End Screen)
-
-Instead of “You Win”
-
-Display:
-
-Patient Risk Exposure: Low / Medium / High
-
-Evidence Defensibility: Strong / Weak
-
-GMP Alignment Score
-
-Decision Narrative Summary
-
-Framed as:
-
-“Would this withstand inspection?”
-
-5. QA Leader Mode (Preview Panel)
-
-For decision-makers:
-
-Culture impact explanation
-
-Behavioral competencies trained
-
-Rollout scalability outline
-
-Example dashboard of team results
-
-This is what secures funding.
-
-High-Level Tech Stack
-Frontend: React / Next.js
-
-Why:
-
-Fast interactive UI
-
-Smooth transitions
-
-Mission-control aesthetic
-
-Backend: Lightweight Node / Serverless
-
-Why:
-
-Track decision paths
-
-Store session metrics
-
-Enable dashboard view
-
-Hosting: Vercel or similar
-
-Why:
-
-Fast global access
-
-Minimal infrastructure overhead
-
-Easy scaling if approved
-
-Analytics Layer
-
-Track:
-
-Decision timing
-
-Escalation frequency
-
-Correct GDP behavior
-
-Risk-taking under pressure
-
-QA leaders fund data.
-
-Conceptual Data Model (Simple ERD in Words)
-
-Entities:
-
-User
-
-Role (Operator / QA)
-
-Site
-
-Session history
-
-Session
-
-Scenario version
-
-Start time
-
-End time
-
-Final disposition
-
-Decision
-
-Signal identified?
-
-Action taken
-
-Timestamp
-
-Pressure Event
-
-Trigger time
-
-User response
-
-Scorecard
-
-Integrity score
-
-Risk index
-
-Defensibility level
-
-UI Design Principles (Krug-Aligned)
-1. Don’t Make Me Think
-
-Clear “Review Record” button
-
-Clear “Escalate” button
-
-No hidden mechanics
-
-Obvious consequences
-
-2. Self-Evident Evidence
-
-When user clicks a document:
-
-Highlight inconsistency
-
-Not with red warnings
-
-With subtle visual tension cues
-
-User discovers — not hunts.
-
-3. Three Mindless Click Rule
-
-Every puzzle:
-
-Open record
-
-Spot signal
-
-Choose action
-
-No complex navigation.
-
-Security & Compliance Notes
-
-No real GMP data
-
-Fully fictional scenario
-
-No personal data storage (for MVP)
-
-Optional SSO for rollout phase
-
-Phased Roadmap
-Phase 1 — Internal Teaser MVP (4–6 weeks)
-
-One full scenario (Manufacturing OR QC)
-
-One pressure sequence
-
-Scorecard output
-
-QA leader preview dashboard mock
-
-Goal: Funding approval.
-
-Phase 2 — Full Integrity Simulator
-
-Multiple scenarios
-
-Manufacturing + QC
-
-Adjustable difficulty
-
-Site-specific customization
-
-Phase 3 — Enterprise Deployment
-
-LMS integration
-
-Multi-site analytics
-
-Culture trend dashboard
-
-Audit defense reporting
-
-Risks & Mitigations
-Risk: “This looks like a game.”
-
-Mitigation:
-
-Mission-control aesthetic
-
-Serious tone
-
-Professional language
-
-Risk: QA sees no ROI
-
-Mitigation:
-
-Include measurable behavioral outputs
-
-Show deviation reduction potential
-
-Link to inspection defensibility
-
-Risk: Too complex
-
-Mitigation:
-
-10-minute scenario
-
-Focused integrity signals
-
-No puzzle gimmicks
-
-Future Expansion Ideas
-
-AI-generated dynamic pressure scenarios
-
-Role-based branching (Operator vs QA reviewer)
-
-Live team simulation mode
-
-Real-site anonymized scenario builder
-
-Benchmarking across sites
+- QA stakeholder confidence
+- Pilot approval / funding decision
+- Readiness for site-level rollout

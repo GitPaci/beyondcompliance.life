@@ -1,333 +1,168 @@
-Site Map (Top-Level Pages Only)
+# App Flow, Pages, and Roles
 
-Home (beyondcompliance.life)
+## Experience Overview
 
-Mission Simulator
+The product is intentionally simple: one high-impact mission flow for operators and one evaluation view for QA leaders.
 
-Mission Complete (Scorecard)
+### Core navigation
 
-Leadership Preview
+1. Landing page
+2. Mission simulator
+3. Mission complete scorecard
+4. Leadership preview
+5. About page
 
-About the Integrity Simulator
+---
 
-No more than five top-level pages.
-Clarity over complexity.
+## Page Architecture
 
-Purpose of Each Page
-1. Home
+## 1) Landing Page
 
-Purpose:
-Position the Integrity Simulator as a strategic capability, not a game.
+**Purpose:** Establish trust, clarity, and action.
 
-Includes:
+### Required sections
 
-Headline:
+- clear value proposition,
+- short explanation of mission simulation,
+- two CTAs:
+  - **Start Mission**
+  - **I’m a QA Leader**
 
-Train Data Integrity Under Real GMP Pressure.
+---
 
-Short 60-second explainer
+## 2) Mission Simulator
 
-“Start Mission” CTA
+**Purpose:** Simulate GMP data integrity decisions under pressure.
 
-“Leadership View” CTA
+### Layout
 
-3 outcome pillars:
+- **Top bar:** Batch ID, timer, integrity indicator
+- **Left panel:** Record and evidence review
+- **Right panel:** Decision actions and escalation options
+- **Overlay layer:** Timed pressure events (email/IM/call)
 
-Protect Patients
+### Behavioral objective
 
-Protect Evidence
+Ensure users make inspectable decisions while balancing urgency and evidence quality.
 
-Strengthen Inspection Readiness
+---
 
-Audience split made obvious:
+## 3) Mission Complete (Scorecard)
 
-“I’m an Operator”
+**Purpose:** Turn actions into defensibility insights.
 
-“I’m a QA Leader”
+### Recommended sections
 
-2. Mission Simulator
+- Integrity summary
+- Evidence chain strength
+- Patient risk exposure
+- Decision defensibility
+- Behavioral insights
+- Reflection prompt
 
-Purpose:
-Interactive 10-minute Data Integrity scenario.
+### Calls to action
 
-Structure:
+- **Run Again**
+- **Share with Leadership**
 
-Top Bar:
+---
 
-Batch ID
+## 4) Leadership Preview
 
-Timer
+**Purpose:** Support internal funding and rollout decisions.
 
-Integrity Meter
+### Four-panel structure
 
-Main Area:
+1. **What this trains** (ALCOA+ behavior under pressure)
+2. **What we measure** (observable metrics)
+3. **Why it matters** (inspection and risk impact)
+4. **Rollout model** (pilot-to-scale path)
 
-Document review panel
+Tone: Executive, concise, outcomes-first.
 
-Decision panel
+---
 
-Dynamic:
+## 5) About Page
 
-Pressure overlays (email, IM, call)
+**Purpose:** Explain the training philosophy.
 
-Evidence inconsistencies
+### Content goals
 
-Escalation decisions
+- why static GMP training is insufficient,
+- why simulation changes behavior,
+- mission statement centered on patient and evidence protection,
+- optional contact for pilot discussion.
 
-Goal:
-Simulate competence under pressure.
+---
 
-3. Mission Complete (Scorecard)
+## Role Model (MVP)
 
-Purpose:
-Convert experience into credibility.
+### Operator (primary user)
 
-Sections:
+**Can access:**
 
-Integrity Summary
+- mission simulator,
+- personal scorecard,
+- optional limited mission history.
 
-Evidence Chain Strength
+**Cannot access:**
 
-Patient Risk Exposure
+- aggregate team analytics,
+- scenario configuration.
 
-Decision Defensibility
+### QA Leader (decision maker)
 
-Behavioral Insights
+**Can access:**
 
-Escalation timing
+- leadership preview,
+- demo mission,
+- sample analytics outputs.
 
-GDP correction accuracy
+**Goal:** Evaluate strategic value and implementation fit.
 
-Response to pressure
+### Admin (post-MVP)
 
-Reflection Prompt
+Deferred to future scope:
 
-“Would this withstand inspection?”
+- user management,
+- scenario configuration,
+- trend reporting.
 
-CTA:
+---
 
-“Run Again”
+## Primary User Journeys
 
-“Share with Leadership”
+### Journey 1 — Operator
 
-4. Leadership Preview
+1. Start mission
+2. Review evidence + respond to pressure
+3. Receive scorecard
 
-Purpose:
-Secure internal funding.
+### Journey 2 — QA Leader
 
-Structured into 4 clear panels:
+1. Open leadership view
+2. Review measurable outcomes
+3. Initiate pilot/funding conversation
 
-What This Trains
+### Journey 3 — Advocacy Loop
 
-ALCOA+ behavior under pressure
+1. Operator completes scenario
+2. Shares scorecard with leadership
+3. Leadership evaluates rollout potential
 
-Escalation discipline
+---
 
-Documentation integrity instinct
+## UX Guardrails
 
-What We Measure
+- Keep navigation shallow and explicit.
+- No hidden branching for MVP.
+- Maximum clarity on action consequences.
+- Always frame outcomes as inspection defensibility.
 
-% users escalating correctly
+---
 
-% correcting per GDP
+## Information Architecture Principle
 
-% resisting time pressure
+> One mission, one scorecard, one leadership decision path.
 
-Why It Matters
-
-Inspection defensibility
-
-Cultural maturity
-
-Risk reduction
-
-Rollout Model
-
-Site-wide deployment
-
-LMS integration
-
-Analytics dashboard preview
-
-Tone:
-Executive. Strategic. Outcome-driven.
-
-5. About the Integrity Simulator
-
-Purpose:
-Explain philosophy and credibility.
-
-Content:
-
-The problem with traditional GMP training
-
-Why simulation changes behavior
-
-Emotional thesis:
-
-We protect patients. We protect evidence. We protect data integrity.
-
-Optional:
-
-Creator credibility
-
-Contact for pilot rollout
-
-User Roles and Access Levels
-
-Keep roles minimal for MVP.
-
-1. Operator (Primary User)
-
-Access:
-
-Mission Simulator
-
-Scorecard
-
-Limited history (optional for MVP)
-
-Cannot:
-
-View aggregate data
-
-Modify scenarios
-
-Goal:
-Practice integrity decisions.
-
-2. QA Leader (Decision Maker)
-
-Access:
-
-Leadership Preview
-
-Demo simulation
-
-Example analytics dashboard
-
-Future rollout overview
-
-Optional (Post-Funding):
-
-Aggregate team metrics
-
-Site-level analytics
-
-Goal:
-Evaluate strategic value.
-
-3. Admin (Post-MVP Phase)
-
-Not required for teaser version.
-
-Future:
-
-Manage users
-
-Configure scenarios
-
-View trend reports
-
-Primary User Journeys (3 Steps Max Each)
-
-Keep journeys short and obvious.
-
-Journey 1 — Operator Experience
-
-Click “Start Mission”
-
-Review records + respond to pressure
-
-Receive Integrity Scorecard
-
-No branching complexity.
-No hidden navigation.
-
-Journey 2 — QA Leader Evaluation
-
-Click “Leadership View”
-
-Review metrics + behavioral outputs
-
-Request Pilot / Funding Discussion
-
-Clear path to action.
-
-Journey 3 — Internal Advocacy
-
-Operator completes mission
-
-Shares scorecard with QA leader
-
-QA leader explores Leadership Preview
-
-Built-in virality without gamification.
-
-Flow Logic Overview
-
-Mission Flow:
-
-Briefing → Record Review → Pressure Event → Decision → Next Signal → Final Decision → Scorecard
-
-Pressure Events:
-
-Customer escalation email
-
-Internal IM messages (Sales / Supply)
-
-Plant manager call overlay
-
-Each event:
-
-Requires acknowledgement
-
-Requires explicit choice
-
-Impacts Integrity Meter
-
-Integrity Meter Logic (Visible System)
-
-Meter states:
-
-Green: Evidence protected
-
-Amber: Pressure rising
-
-Red: Evidence chain compromised
-
-Meter should:
-
-Change gradually
-
-Never jump dramatically
-
-Reflect cumulative behavior
-
-Users must feel cause-and-effect.
-
-Page-Level Emotional Consistency
-
-Home → Strategic and serious
-Mission → Focused and intense
-Scorecard → Reflective and professional
-Leadership Preview → Executive and measurable
-About → Credible and principled
-
-Never playful.
-Never gimmicky.
-Never “escape room” themed.
-
-Final Alignment Check
-
-This system:
-
-Positions simulation as risk mitigation
-
-Makes operators feel trusted
-
-Makes QA leaders see ROI
-
-Avoids trivializing GMP
-
-Scales beyond MVP
+This keeps the product focused, testable, and fundable.
