@@ -1,366 +1,164 @@
-Build Philosophy
+# Implementation Plan
 
-Build one powerful 10-minute scenario
+## Delivery Strategy
 
-Make it feel finished
+Build a focused, high-quality MVP that demonstrates behavioral training value quickly.
 
-Measure behavior
+- **Timeline target:** 4–6 weeks
+- **Approach:** Single-scenario vertical slice
+- **Priority:** Defensible decisions under pressure
 
-Impress QA leaders with clarity, not complexity
+---
 
-Goal:
-Ship a funding-worthy MVP in 4–6 weeks.
+## Phase 0 — Alignment (Week 1)
 
-Step-by-Step Build Sequence (Mindless Micro-Tasks)
-Phase 0 — Alignment (Week 1)
+### 1) Lock scenario scope
 
-Step 1 — Lock Scenario Scope
+- Choose one scenario domain (Manufacturing *or* QC)
+- Select top 3 integrity signals
+- Define final disposition logic
 
-Choose: Manufacturing OR QC (not both)
+**Deliverable:** One-page scenario brief.
 
-Select 3 integrity signals only
+### 2) Finalize decision tree
 
-Define final disposition logic
+For each signal, define:
 
-Deliverable:
+- what the user sees,
+- available decisions,
+- immediate system response,
+- score impact.
 
-One-page scenario outline
+### 3) Define pressure timeline
 
-Step 2 — Define Decision Tree
-For each signal:
+Create timed interventions (example: minute 2, 5, 7) with:
 
-What user sees
+- event copy,
+- emotional tone,
+- expected user response,
+- decision consequence.
 
-What options appear
+---
 
-What happens next
+## Phase 1 — Experience Design (Week 2)
 
-How score changes
+### 4) Map end-to-end flow (max 6 screens)
 
-No UI yet.
-Just logic clarity.
+1. Mission briefing
+2. Record review
+3. Pressure overlay
+4. Decision confirmation
+5. Final review
+6. Integrity scorecard
 
-Step 3 — Define Pressure Timeline
+### 5) Build low-fidelity wireframes
 
-Example:
+Layout guidance:
 
-Minute 2 → Customer escalation email
-Minute 5 → Internal IM pressure
-Minute 7 → Plant manager call
+- top: mission timer + integrity indicator,
+- left: evidence/document panel,
+- right: action panel.
 
-Define:
+### 6) Write microcopy
 
-Message copy
+Tone standards:
 
-Emotional tone
+- calm,
+- professional,
+- empowering,
+- inspection-oriented.
 
-Required user response
+---
 
-Keep each pressure event:
+## Phase 2 — Core Build (Weeks 3–4)
 
-≤ 30 seconds to process
+### 7) Frontend component architecture
 
-Clear decision required
+Recommended components:
 
-Phase 1 — Experience Design (Week 2)
+- `MissionHeader`
+- `DocumentViewer`
+- `PressureOverlay`
+- `ActionPanel`
+- `IntegrityMeter`
+- `ScorecardPanel`
 
-Step 4 — UX Flow Map
+### 8) Decision logic engine
 
-Map 6 screens max:
+Track per session:
 
-Mission Briefing
+- signal detection,
+- escalation timing,
+- GDP correction behavior,
+- raw data protection actions.
 
-Record Review Screen
+Compute outputs:
 
-Pressure Event Overlay
+- patient risk index,
+- evidence defensibility level,
+- inspection readiness score.
 
-Decision Confirmation Screen
+### 9) Pressure event engine
 
-Final Review Panel
+- Timed overlays with required acknowledgment
+- No passive dismissal
+- Clear response options tied to outcomes
 
-Integrity Scorecard
+---
 
-Nothing more.
+## Phase 3 — Leadership Layer (Week 5)
 
-Step 5 — Wireframe (Low Fidelity)
+### 10) Add leadership preview route
 
-Dark mission-control layout
+Include four panels:
 
-Left panel: Documents
+1. What the simulator trains
+2. What is measured
+3. Why this matters (inspection / risk)
+4. Rollout model
 
-Right panel: Actions
+### 11) Add sample analytics dashboard (mock or seeded)
 
-Top bar: Mission timer
+- escalation correctness rates,
+- pressure response patterns,
+- defensibility trends.
 
-Subtle Integrity Meter
+---
 
-No decoration yet.
-Just clarity.
+## Phase 4 — Pilot Readiness (Week 6)
 
-Step 6 — Write All Microcopy
+### 12) Validation and polish
 
-Tone:
+- QA review of scenario realism
+- copy and UX cleanup
+- bug fixes and reliability checks
 
-Calm
+### 13) Pilot package
 
-Professional
+Prepare concise internal package:
 
-Empowering
+- product purpose,
+- outcomes measured,
+- implementation options,
+- estimated rollout effort.
 
-Examples:
+---
 
-Instead of:
-“Wrong answer.”
+## Non-Negotiable Constraints
 
-Use:
-“Evidence chain weakened. Reassess original source.”
+- Keep MVP to one strong scenario.
+- Avoid role sprawl and admin complexity.
+- Prefer measurable behavior signals over subjective feedback.
+- Prioritize inspection-defensible framing in all outcomes.
 
-Instead of:
-“Good job!”
+---
 
-Use:
-“Decision defensible. Evidence protected.”
+## Done Criteria (MVP)
 
-Phase 2 — Build (Weeks 3–4)
+MVP is complete when:
 
-Step 7 — Frontend Structure
-
-Build components:
-
-MissionHeader
-
-DocumentViewer
-
-PressureOverlay
-
-ActionPanel
-
-IntegrityMeter
-
-ScorecardPanel
-
-Keep them modular.
-
-Step 8 — Decision Logic Engine
-
-Store:
-
-Signal detected (yes/no)
-
-Escalation timing
-
-GDP correction correctness
-
-Raw data protection choice
-
-Output:
-
-Patient Risk Index
-
-Evidence Defensibility Level
-
-Inspection Readiness Score
-
-Step 9 — Pressure Engine
-
-Timed triggers:
-
-Appear as modal overlays
-
-Slight blur background
-
-IM messages stack subtly
-
-User must:
-
-Acknowledge
-
-Choose response
-
-No passive scrolling.
-
-Phase 3 — QA Leader Funding Layer (Week 5)
-
-This is critical.
-
-Step 10 — Build “Leadership View” Page
-
-Separate route:
-/leadership-preview
-
-Includes:
-
-What competencies are trained
-
-Behavioral metrics captured
-
-Example team dashboard
-
-Rollout model (site-wide deployment vision)
-
-This page sells funding.
-
-Step 11 — Analytics Layer
-
-Track:
-
-Average escalation time
-
-% users who ignore pressure
-
-% who correct per GDP
-
-% who escalate appropriately
-
-These are your funding slides.
-
-Phase 4 — Polish & Test (Week 6)
-
-Step 12 — 3-User Guerrilla Test
-
-Participants:
-
-1 Operator
-
-1 QA
-
-1 Neutral observer
-
-Ask:
-
-Where did you hesitate?
-
-What felt confusing?
-
-What felt powerful?
-
-Fix top 3 friction points only.
-
-Step 13 — Emotional Audit
-
-Check:
-
-Does this feel serious, not playful?
-
-Does it build pride?
-
-Does it avoid shame?
-
-Does it reinforce “patient protection”?
-
-Remove anything gimmicky.
-
-Timeline Overview
-
-Week 1 → Scenario logic locked
-Week 2 → UX + copy complete
-Week 3–4 → Build
-Week 5 → Leadership view + analytics
-Week 6 → Test + polish
-
-Total: 4–6 weeks
-
-Team Roles
-Product Lead (You)
-
-Own narrative
-
-Own funding positioning
-
-Guard emotional tone
-
-UX Designer
-
-Mission-control aesthetic
-
-Interaction clarity
-
-Microcopy refinement
-
-Frontend Developer
-
-React build
-
-State management
-
-Animation timing
-
-Backend/Logic Dev
-
-Decision scoring
-
-Data capture
-
-Metrics output
-
-QA Advisor (SME)
-
-Validate GMP realism
-
-Ensure integrity logic is defensible
-
-Review pressure scenarios
-
-Recommended Rituals
-Weekly “Integrity Review”
-
-Ask:
-
-Would this survive inspection?
-
-Is the compliant path clear?
-
-Are we teaching instinct or trivia?
-
-Bi-Weekly 30-Minute Usability Test
-
-3 users.
-No explanation.
-Observe silently.
-
-Log:
-
-3 confusions
-
-3 emotional reactions
-
-Fix highest-impact issue first.
-
-Optional Integrations (Post-Funding)
-
-LMS completion tracking
-
-SSO (Okta / Azure AD)
-
-Site benchmarking dashboard
-
-Audit evidence export
-
-Role-based branching (Operator vs QA reviewer)
-
-Stretch Goals (If Time Allows)
-
-Adjustable pressure intensity
-
-Multi-player team mode
-
-AI-driven dynamic IM messages
-
-Site-specific scenario customization
-
-Success Criteria (For Funding Conversation)
-
-QA leaders should say:
-
-“This changes behavior.”
-
-“This prepares teams for inspection reality.”
-
-“This scales.”
-
-“This measures what matters.”
-
-If they say:
-“That’s a fun game.”
-
-We failed positioning.
+- users can complete mission flow end-to-end,
+- pressure events alter decision context,
+- scorecard reflects behavior-driven outcomes,
+- leadership view communicates strategic value,
+- pilot conversation can be initiated with confidence.
