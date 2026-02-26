@@ -65,35 +65,17 @@ Avoid:
 - Slate Blue: `#121A2B`
 - Graphite: `#1B2438`
 
-| Token | Hex | Preview |
-|---|---|---|
-| Deep Navy | `#0B1220` | ![Deep Navy](https://img.shields.io/badge/-%230B1220-0B1220?style=flat-square) |
-| Slate Blue | `#121A2B` | ![Slate Blue](https://img.shields.io/badge/-%23121A2B-121A2B?style=flat-square) |
-| Graphite | `#1B2438` | ![Graphite](https://img.shields.io/badge/-%231B2438-1B2438?style=flat-square) |
-
 ### Status accents
 
 - Integrity Teal: `#19E3B1`
 - Mission Amber: `#F5A524`
 - Controlled Red: `#E5484D`
 
-| Token | Hex | Preview |
-|---|---|---|
-| Integrity Teal | `#19E3B1` | ![Integrity Teal](https://img.shields.io/badge/-%2319E3B1-19E3B1?style=flat-square) |
-| Mission Amber | `#F5A524` | ![Mission Amber](https://img.shields.io/badge/-%23F5A524-F5A524?style=flat-square) |
-| Controlled Red | `#E5484D` | ![Controlled Red](https://img.shields.io/badge/-%23E5484D-E5484D?style=flat-square) |
-
 ### Text colors
 
 - Primary: `#E6EDF7`
 - Secondary: `#9BA6C2`
 - Disabled: `#58627A`
-
-| Token | Hex | Preview |
-|---|---|---|
-| Primary | `#E6EDF7` | ![Primary](https://img.shields.io/badge/-%23E6EDF7-E6EDF7?style=flat-square) |
-| Secondary | `#9BA6C2` | ![Secondary](https://img.shields.io/badge/-%239BA6C2-9BA6C2?style=flat-square) |
-| Disabled | `#58627A` | ![Disabled](https://img.shields.io/badge/-%2358627A-58627A?style=flat-square) |
 
 **Accessibility rule:** Maintain at least WCAG AA contrast (4.5:1).
 
