@@ -65,35 +65,17 @@ Avoid:
 - Slate Blue: `#121A2B`
 - Graphite: `#1B2438`
 
-| Token | Hex | Preview |
-|---|---|---|
-| Deep Navy | `#0B1220` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#0B1220;border:1px solid #2A344A;"></span> |
-| Slate Blue | `#121A2B` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#121A2B;border:1px solid #2A344A;"></span> |
-| Graphite | `#1B2438` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#1B2438;border:1px solid #2A344A;"></span> |
-
 ### Status accents
 
 - Integrity Teal: `#19E3B1`
 - Mission Amber: `#F5A524`
 - Controlled Red: `#E5484D`
 
-| Token | Hex | Preview |
-|---|---|---|
-| Integrity Teal | `#19E3B1` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#19E3B1;border:1px solid #2A344A;"></span> |
-| Mission Amber | `#F5A524` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#F5A524;border:1px solid #2A344A;"></span> |
-| Controlled Red | `#E5484D` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#E5484D;border:1px solid #2A344A;"></span> |
-
 ### Text colors
 
 - Primary: `#E6EDF7`
 - Secondary: `#9BA6C2`
 - Disabled: `#58627A`
-
-| Token | Hex | Preview |
-|---|---|---|
-| Primary | `#E6EDF7` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#E6EDF7;border:1px solid #2A344A;"></span> |
-| Secondary | `#9BA6C2` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#9BA6C2;border:1px solid #2A344A;"></span> |
-| Disabled | `#58627A` | <span style="display:inline-block;width:96px;height:20px;border-radius:4px;background:#58627A;border:1px solid #2A344A;"></span> |
 
 **Accessibility rule:** Maintain at least WCAG AA contrast (4.5:1).
 
