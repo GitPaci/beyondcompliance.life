@@ -34,10 +34,10 @@ This simulator is designed to build:
 
 ## Project documents
 
-- [Master Plan](./masterplan.md) — product strategy, audience, MVP feature set, and success model.
-- [Implementation Plan](./implementation-plan.md) — phased delivery and execution details.
-- [App Flow, Pages, and Roles](./app-flow-pages-and-roles.md) — IA, user journeys, and role access model.
-- [Design Guidelines](./design-guidelines.md) — tone, UX principles, visual system, and interaction guidance.
+- [Master Plan](./docs/masterplan.md) — product strategy, audience, MVP feature set, and success model.
+- [Implementation Plan](./docs/implementation-plan.md) — phased delivery and execution details.
+- [App Flow, Pages, and Roles](./docs/app-flow-pages-and-roles.md) — IA, user journeys, and role access model.
+- [Design Guidelines](./docs/design-guidelines.md) — tone, UX principles, visual system, and interaction guidance.
 
 ## Product principles
 
